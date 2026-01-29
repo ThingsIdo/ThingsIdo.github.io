@@ -137,9 +137,8 @@ body {
     
         .bigbox {
       
-        max-width: 300px;
-        height: 300px;
-        width: 300px;
+        max-width: 335px;    
+        max-height: 335px;
          background-color: tan;
          padding: 10px;
          
@@ -147,8 +146,8 @@ body {
         }
         .bigbox2 {
         
-        height:clamp(300px, 100px, 100px);
-        width: clamp(300px, 60vw, 10vw);
+        height:clamp(335px, 100px, 100px);
+        width: clamp(335px, 60vw, 10vw);
          background-color: tan;
          display: flex;
          flex-wrap: 0;
@@ -166,4 +165,5 @@ body {
     }}}}
             
                 
+
 
