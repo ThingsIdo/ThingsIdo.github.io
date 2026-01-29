@@ -1,0 +1,3 @@
+<img src="png.png" id="pfp"></div>
+        <div class="bio"><p1>Hello my name is Olivia and this is my freakin website i guess, I am happy to have you here Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium animi, quia unde ratione harum molestiae veritatis quos error dolorum sint ducimus quibusdam excepturi quae saepe quam autem dignissimos deleniti aliquid?</p></div>
+        <div class="grid">
