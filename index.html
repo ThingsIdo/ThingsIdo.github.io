@@ -1,250 +1,104 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html {
-}
-
-header{
-    position: fixed;
-    left: -100px;
-    z-index: 997;
-    top: 0;
-}
-#clock {
-    left: 0%;
-    top: 0px;
-    position: absolute;
-    z-index: 998;
-}
-
-
-
-
- .button img{
-        position: fixed;
-        top: 0;
-        right: 3%;
-        z-index: 999;
-        
-     }
-
-    .button:hover {
-            position: fixed;
-            top: 0;
-            right: 7%;
-            z-index: 999;
-            display:none;
+<!DOCTYPE html>
+<html lang="en">
+</head>
+    <meta charset="UTF+8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href=styles.css>
+    
+         <style>
+         
+        body {    
+         background-image: url('Spectral7.png');
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
         }
-    .button2 img{
-            position: fixed;
-            top: 0;
-            right: 3%;
-            z-index: 998;
-    }
-
-.coin img {
-    position: absolute;
-    z-index: 999;
-    height: 100px;
-    left: 10px;
-    top: 10px;
-}
-
-
-
-
-
-
-body {
+        
     
-    margin: 0;
-    padding: 5;
-    min-height: 2000px;
-    
-    
+         @font-face {
+            font-family: "vcr";
+            src: url("VCR_OSD_MONO_1.001.ttf") format("truetype");
+         }     
+        
+      
+         
+         </style>
+         
+         </style>
+        <header class="headerbar">
+            <img src="headertest3.png" alt="bar">
+            
+            
+        </header>
+        
+ 
+    </head>
+
+
+<body>
    
-    font-family: Arial, Helvetica, sans-serif;
-
-
-
-
-
-
-
-#container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-.fishbox {
-    position: relative;
-    width: clamp(100px , 90vw, 1000px);
-    background-color: lightblue;
-    top: 52.5px;
-    
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    overflow-x: auto;
-    flex-shrink: 0;
-    
-}
-.fishbox::-webkit-scrollbar {
-    display: none;
-}
-.fishtank {
-    flex-shrink: 0;
-    position: relative;
-    top: 52.5px;
-    width: 1000px;
-    height: 200px;
-    overflow-x: clip;
-    
-    
-     
-}
-
-
-
-#eventwrapper {
-    height: 375px;
-    width: clamp(100px , 90vw, 1000px);
-    position: relative;
-    background-color: aqua;
-    padding: 10px;
-    top: 60px;
-    border: 8px solid blue;
-    background-image: url('woodtest.png');
-            background-repeat: repeat;
-    display: flex;
-    overflow-x: scroll;
-}
-    
-        .eventcontainer {
-            
-            height:100%;
-            width: 100%;;
-            color: black;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 3px;
-            gap: 7px;
-            animation: spin 40s infinite linear;
-        }
-              .eventcards {
-            
-             flex-shrink:0;
-              height: 100%;
-             width: fit-content;
+                                
+                                
+<div class="button"><img src="buttontest.png" height="54px"></div>
+            <div class="button2"><img src="buttontesthover.png"></div>
            
-             background-color: lightgreen;
-            }    
+
+
+   <div id="clock"><img src="headertest.png" alt="clock">
+   </div>
+        <div class="coin"><img src="coine.gif" alt="coin"></div>
+
+
+              
+    </div></div></div></div>
+   <div id="container">
+
+        <div class="fishbox">
+            <img src="fishtank.png" alt="fishtank"></div>
+
+
+      <div id="eventwrapper"> 
+        <div class="eventcontainer">
+            <div class="eventcards"><img src="draft.png" width="100%" height="100%"></div>
+            <div class="eventcards"><img src="draft2.png" width="100%" height="100%"></div>
+            <div class="eventcards"><img src="draft3.png" width="100%" height="100%"></div>
+            <div class="eventcards"><img src="draft4.png" width="100%" height="100%"></div>
+            <div class="eventcards"><img src="draft5.png" width="100%" height="100%"></div>
+            <div class="eventcardsspacer"></div>
+            </div></div>
+
+        <div id="linkcontainer">
+
+
+        </div>
+        <div id="border">
+            <div class="eyeleft"><img src="eyeleft.png" alt="eyeleft"></div>
+            <div class="eye"><img src="eye.png" alt="eye"></div>
+            <div class="eyeright"><img src="eyeright.png" alt="eyeright"></div>
+
+        </div>
         
-                .eventcardsspacer {
-                    flex-shrink:0;
-                    height: 100%;
-                    width: 10px;
-                    background-color: transparent;
-                }
 
-    #linkcontainer {
-        height: 100px;
-        width: clamp(100px , 90vw, 1000px);
-        position: relative;
-        background-color: aqua;
-        padding: 10px;
-        top: 80px;
-        border: 8px solid blue;
-        background-image: url('woodtest.png');
-                background-repeat: repeat;
-    }          
-
-
-
-
-
-
-
-    #border {
-        height: 140px;
-        width: clamp(100px , 90vw, 1000px);
-        position: relative;
-        
-        top: 80px;
-        display: flex;
-        justify-content:center;
-        
-    }
     
-        .eye {
-            display: flex;
-            justify-content: center;
-            height: 130px;
-            width: 86%;
-            
-            overflow-x: hidden;
-        }
+    <div class="section">
+    <div class="bigbox"><img src="png.png" alt="png" width="100%" height="100%"></div>
+    <div class="bigbox2"><div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, debitis numquam doloribus quo et nulla voluptatibus temporibus laboriosam ipsa odit consequatur ducimus modi vero eaque? Debitis illum quos praesentium consequuntur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur omnis hic quod ut, aperiam quasi ullam est dicta ea ducimus? Id beatae repellendus ab laboriosam! Magnam itaque dicta repudiandae <div class="lor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quam dolor voluptas reiciendis dignissimos. Maiores odio earum harum corrupti consequatur doloremque officia ullam nulla sunt blanditiis. Dolorum voluptatum voluptas non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quos tempora nulla porro similique, libero dolor ullam reiciendis! Adipisci, neque.</p></div>     
+    </div><div></div></div>
 
-
-
-    .section {
-     height: 900px;
-     width: clamp(100px , 90vw, 1000px);
-     padding: 10px;
-     border: 8px solid rgb(0, 0, 0);
-     background-image: url('woodtest.png');
-     background-repeat: repeat;
-     
-     position: relative;
-     top: 700px;
-     gap: 10px;
-    display: flex; 
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-content: start;
-    
-     
-    
-        .bigbox {
-        max-width: 335px;    
-        max-height: 335px;
-         background-color: tan;
-         padding: 10px;
-         box-shadow: 1px 10px 30px 5px rgb(10, 30, 24);
-         z-index: 996;
-         
-         
-        
-        }
-        .bigbox2 {
-            z-index: 996;
-        box-shadow: 1px 10px 30px 5px rgb(10, 30, 24);
-        height:clamp(335px, 100px, 100px);
-        width: clamp(600px, 60vw, 10vw);
-         background-color: tan;
-         display: flex;
-         flex-wrap: 0;
-         flex-shrink: 1;
-         padding: 10px;
-         gap: 10px;
-            .p {
-                font-family: vcr;
-                text-wrap-mode:wrap;
                 
-                color: rgb(5, 87, 46);
-                font-size: clamp(12.2px, 1px + 2vw, 19px);
-            }
+    
+</body>
+    
+        
+    
 
-    }}}}
-            
-                
+
+
+
+
+
+
 
 
 
