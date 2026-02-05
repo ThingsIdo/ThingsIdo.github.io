@@ -51,54 +51,11 @@ header{
     left: 10px;
     top: 10px;
 }
-.fishboxbox {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    border: olive   solid 10px;
-    top: 70px;
-    
-    
-}
-.masker {
-    background-color: blue;
-    width: 100px;
-    height: 200px;
-    
-}
 
-.fishbox {
-    position: relative;
-    width: clamp(100px , 90vw, 1000px);
-    background-color: lightblue;
-    top: 52.5px;
-    
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    
-    
-    
-}
 
-.fishtank img {
-    position: relative;
-    top: 52.5px;
-    width: 1000px;
-    height: 200px;
-   
-    object-fit: cover
-    
-     
-}
-.masker2 {
-    background-color: blue;
-    width: 100px;
-    height: 200px;
-}
+
+
+
 
 body {
     
@@ -123,17 +80,44 @@ body {
     flex-direction: column;
     align-items: center;
     
-
+.fishbox {
+    position: relative;
+    width: clamp(100px , 90vw, 1000px);
+    background-color: lightblue;
+    top: 52.5px;
+    
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow-x: auto;
+    flex-shrink: 0;
+    
+}
+.fishbox::-webkit-scrollbar {
+    display: none;
+}
+.fishtank {
+    flex-shrink: 0;
+    position: relative;
+    top: 52.5px;
+    width: 1000px;
+    height: 200px;
+    overflow-x: clip;
+    
+    
+     
+}
 
 
 
 #eventwrapper {
-    height: 500px;
+    height: 375px;
     width: clamp(100px , 90vw, 1000px);
     position: relative;
     background-color: aqua;
     padding: 10px;
-    top: 600px;
+    top: 60px;
     border: 8px solid blue;
     background-image: url('woodtest.png');
             background-repeat: repeat;
@@ -147,23 +131,64 @@ body {
             width: 100%;;
             color: black;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
             padding: 3px;
             gap: 7px;
             animation: spin 40s infinite linear;
         }
-            .eventcards {
+              .eventcards {
             
-            flex-shrink:0;
-            height: 100%;
-            width: fit-content;
-            background-color: lightgreen;
+             flex-shrink:0;
+              height: 100%;
+             width: fit-content;
+           
+             background-color: lightgreen;
             }    
         
-        @keyframes spin {
-            from {translate: 0;}
-            to {translate: -100%;}
+                .eventcardsspacer {
+                    flex-shrink:0;
+                    height: 100%;
+                    width: 10px;
+                    background-color: transparent;
+                }
+
+    #linkcontainer {
+        height: 100px;
+        width: clamp(100px , 90vw, 1000px);
+        position: relative;
+        background-color: aqua;
+        padding: 10px;
+        top: 80px;
+        border: 8px solid blue;
+        background-image: url('woodtest.png');
+                background-repeat: repeat;
+    }          
+
+
+
+
+
+
+
+    #border {
+        height: 140px;
+        width: clamp(100px , 90vw, 1000px);
+        position: relative;
+        
+        top: 80px;
+        display: flex;
+        justify-content:center;
+        
+    }
+    
+        .eye {
+            display: flex;
+            justify-content: center;
+            height: 130px;
+            width: 86%;
+            
+            overflow-x: hidden;
         }
 
 
@@ -218,9 +243,10 @@ body {
             }
 
     }}}}
-      
             
                 
+
+
 
 
 
