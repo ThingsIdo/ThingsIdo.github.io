@@ -192,16 +192,69 @@ body {
             overflow-x: hidden;
         }
             #ball {
-                left:368px;
+
                 z-index: 99;
                 height: 60px;
                 width: 60px;
                 position: absolute;
             }
         
+    #exhibit {
+        display: flex;
+        flex-shrink: 1;
+        justify-content: center;
+        width: clamp(100px , 90vw, 1000px);
+        position: relative;
+        background-color: aqua;
+        padding: 10px;
+        top: 140px;
+        border: 8px solid blue;
+        background-image: url('woodtest.png');
+                background-repeat: repeat;
+    }
 
+    #border2 {
+        height: 140px;
+        width: clamp(100px , 90vw, 1000px);
+        position: relative;
+        
+        top: 199px;
+        display: flex;
+        justify-content:center;
+        align-items: flex-end;
+        
+        
+        
+    }
+    
+        .eye2 {
+            z-index: 9;
+            display: flex;
+            justify-content: center;
+            height: 112px;
+            width: 86%;
+            
+            overflow-x: hidden;
+        }
+            #ball {
 
-
+                z-index: 99;
+                height: 60px;
+                width: 60px;
+                position: absolute;
+            }
+            .eyeright2 {
+                
+                
+                display: flex;
+                justify-content: center;
+            }
+            .eyeleft2 {
+                
+                
+                display: flex;
+                justify-content: center;
+            }
     .section {
      height: 900px;
      width: clamp(100px , 90vw, 1000px);
@@ -210,7 +263,7 @@ body {
      background-image: url('woodtest.png');
      background-repeat: repeat;
      position: relative;
-     top: 700px;
+     top: 200px;
      gap: 10px;
     display: flex; 
     flex-wrap: wrap;
@@ -253,6 +306,9 @@ body {
     }}}}
             
                 
+
+
+
 
 
 
